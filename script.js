@@ -40,7 +40,7 @@ function waterfall(parent,box){
     		oBoxs[i].style.position='absolute';
     		oBoxs[i].style.top=minH+'px';
     		oBoxs[i].style.left=oBoxW*index+'px';
-    		hArr[index]+=oBoxs[i].offsetHeight;
+    		hArr[index]+=oBoxs[i].offsetHeight;//更新该列的高度
     	}
     }
     console.log(hArr);
@@ -63,7 +63,7 @@ function getMinhIndex(arr,val){
         }
 	}
 }
-//检测是否具备加载数据块的条件
+//检测是否具备加载数据块的条件（以最后一个数据块来判断）
 function checkScrollSlide(){
 	var oParent=document.getElementById("main");
 	var oBoxs=getByClass(oParent,'box');

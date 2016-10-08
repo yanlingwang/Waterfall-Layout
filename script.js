@@ -16,7 +16,7 @@ window.onload=function(){
                oImg.src="images/"+dataInt.data[i].src;
                oPic.appendChild(oImg);
            }
-           waterfall('main','box');
+           waterfall('main','box');//for循环之后再调用一次waterfall函数，使新加载的图片也按瀑布流布局显示
 		}
 		
 	}
